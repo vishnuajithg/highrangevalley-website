@@ -50,22 +50,38 @@ export default function HeroPageRight() {
       />
 
       {/* Leaf background shape */}
-      <img
-        src="/136 2.svg"
-        alt="Leaf background"
-        className={`
-          absolute left-1/2 top-0 -translate-x-1/2 scale-x-[-1]
-          w-[80vw] max-w-[675px] max-h-[535px] object-contain
-          pointer-events-none z-0 rounded-[148px]
-          
-          lg:mx-[200px]
-           lg:left-1/2 lg:top-1 lg:-translate--1/2 lg:scale-x-[-1]
-          transition-transform duration-700 ease-out
-          ${mounted ? "scale-100" : "scale-95"}
-        `}
-        draggable={false}
-        loading="lazy"
-      />
+     <img
+  src="/136 2.svg"
+  alt="Leaf background"
+  className={`
+    absolute left-1/2 top-0 -translate-x-1/2 scale-x-[-1]
+    lg:top-10 lg:-translate-x-1/3
+    w-[80vw] max-w-[675px] max-h-[535px] object-contain
+    pointer-events-none z-0 rounded-[148px]
+    transition-transform duration-700 ease-out
+    
+    ${mounted ? "scale-100" : "scale-95"}
+  `}
+  draggable={false}
+  loading="lazy"
+/>
+{/* 
+<img
+        src="/136 2.svg"
+        alt="Leaf background"
+        className={`
+          absoluteleft-1/2 top-10 -translate-x-1/3 scale-x-[-1]
+          w-[80vw] max-w-[675px] max-h-[535px] object-contain
+          pointer-events-none z-0 rounded-[148px]
+         
+          lg:mx-[200px]
+           lg:left-1/2 lg:top-1 lg:-translate--1/2 lg:scale-x-[-1]
+          transition-transform duration-700 ease-out
+          ${mounted ? "scale-100" : "scale-95"}
+        `}
+        draggable={false}
+        loading="lazy"
+      /> */}
 
       {/* Main center pack - with fade up and slight bounce on mount, hover bloom */}
       <img
@@ -91,6 +107,7 @@ export default function HeroPageRight() {
         alt="Product 3"
         className={`
           absolute left-[13.5%] top-[45%]
+          lg:left-[30%] lg:top-[7%]
           w-[40vw] max-w-[269px] h-auto z-20
           pointer-events-none select-none
           lg:pt-[250px] lg:ml-[-100px]
@@ -109,6 +126,7 @@ export default function HeroPageRight() {
         alt="Brown pouch"
         className={`
           absolute left-[60.5%] top-[66%]
+          lg:left-[30%] lg:top-[7%]
           w-[25vw] max-w-[184px] h-auto z-20
           lg:pt-[380px] lg:ml-[220px]
 
@@ -126,6 +144,7 @@ export default function HeroPageRight() {
       <div
         className={`
           absolute left-[9.7%] top-[30%]
+          lg:left-[9.7%] top-[30%]
           flex items-center justify-center
           rounded-[19px]
           shadow-lg backdrop-blur-md border
@@ -133,7 +152,7 @@ export default function HeroPageRight() {
           px-4 py-3
           mt-[-40px] 
           sm:mt-[0px] sm:ml-[30px]
-          lg:mt-[150px] lg:ml-[-100px]
+          
           max-w-[221px] w-[32vw] min-w-[160px]
           bg-white bg-opacity-[0.15]
           cursor-default select-none
